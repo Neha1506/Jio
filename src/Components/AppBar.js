@@ -18,7 +18,7 @@ export default function ButtonAppBar() {
                 </IconButton>
                 
             </Link>
-            <AccessAlarm/>
+           
             
           Title Goes Here
             
