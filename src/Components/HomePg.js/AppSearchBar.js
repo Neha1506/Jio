@@ -13,7 +13,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import SwipeableTemporaryDrawer from '../LeftDrawer';
+import SwipeableTemporaryDrawer from './LeftDrawer';
 
 //Appbar Customised according to my page. Have added Left drawer and replaced icons.
 
