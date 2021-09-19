@@ -5,6 +5,8 @@ import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+
+//Image List For Home Page .
 //import itemData from './itemData';
 import image from '../Assets/maggi.png'
 import image2 from '../Assets/Oreo.png'

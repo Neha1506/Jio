@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
+//Check Pages On IPhone X View
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -5,6 +5,8 @@ import SwipeableTextMobileStepper from '../Components/HomePg.js/Carousel';
 import PrimarySearchAppBar from '../Components/HomePg.js/AppSearchBar';
 import AutoGridNoWrap from '../Components/HomePg.js/Wrap';
 import SingleLineImageList from '../Components/ImageList';
+import AutoGridNoWrapB from '../Components/HomePg.js/WrapB';
+import AutoGridNoWrapC from '../Components/HomePg.js/WrapC';
 
 
 
@@ -25,9 +27,10 @@ export default function Home() {
             <SwipeableTextMobileStepper/>
             <AutoGridNoWrap/>
             <SingleLineImageList/>
-            <AutoGridNoWrap/>
+            <AutoGridNoWrapB/>
             <SwipeableTextMobileStepper/>
-            <AutoGridNoWrap/>
+            <AutoGridNoWrapC/>
+            
             
             
             

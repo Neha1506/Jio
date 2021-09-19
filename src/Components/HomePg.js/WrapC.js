@@ -4,9 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import Favorite from '@material-ui/icons/Favorite';
 
-//THREE WRAPS PUT.
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 3),
   },
   paper: {
-    maxWidth: 400,
+    maxWidth: 800,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
   },
@@ -23,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 const message = ``;
 
-export default function AutoGridNoWrap() {
+export default function AutoGridNoWrapC() {
   const classes = useStyles();
 
   return (
@@ -32,7 +30,7 @@ export default function AutoGridNoWrap() {
     <Paper className={classes.paper}>
 
       <Grid container wrap="nowrap" spacing={2}>
-        Max saving deal
+       Collection With Best Offers
         <Grid item>
 
         </Grid>

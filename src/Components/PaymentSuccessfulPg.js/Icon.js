@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
+//Extra Icon Component Inside Of image.
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > svg': {

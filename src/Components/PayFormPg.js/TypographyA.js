@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
+//Typography Put
 export default function ResponsiveFontSizes() {
   return (
     <div>
