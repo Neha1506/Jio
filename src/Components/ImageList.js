@@ -6,11 +6,15 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
+
+
 //Image List For Home Page .
 //import itemData from './itemData';
 import image from '../Assets/maggi.png'
 import image2 from '../Assets/Oreo.png'
 import image3 from '../Assets/Pringles.png'
+import { ButtonGroup } from '@material-ui/core';
+import BasicButtonGroup from './HomePg.js/ButtonGroup';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -82,6 +86,7 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
+                  <BasicButtonGroup/>
                 </IconButton>
               }
             />
@@ -99,6 +104,7 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
+                  <BasicButtonGroup/>
                 </IconButton>
               }
             />
@@ -116,6 +122,7 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
+                  <BasicButtonGroup/>
                 </IconButton>
               }
             />
