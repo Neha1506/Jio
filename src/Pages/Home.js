@@ -1,27 +1,46 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import DatePickers from '../Components/DateTimePicker';
-import ContainedButtons from '../Components/Button2';
-import { BottomNavigation } from '@material-ui/core';
+import ContainedButtons from '../Components/HomePg.js/Button2';
+import SwipeableTextMobileStepper from '../Components/HomePg.js/Carousel';
+import PrimarySearchAppBar from '../Components/HomePg.js/AppSearchBar';
+import AutoGridNoWrap from '../Components/HomePg.js/Wrap';
+import SingleLineImageList from '../Components/ImageList';
+
+
+
+
+
 
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
-            <p>
-                Welcome to your web application. Make something beautiful!
-            </p>
-            <p>
-                To get started, edit <code>src/App.js</code>, save, and reload this page.
-            </p>
-            <DatePickers/>
+
+          <PrimarySearchAppBar/>
+            
             <ContainedButtons/>
-            <BottomNavigation/>
+            <SwipeableTextMobileStepper/>
+            <SwipeableTextMobileStepper/>
+            <SwipeableTextMobileStepper/>
+            <AutoGridNoWrap/>
+            <SingleLineImageList/>
+            <AutoGridNoWrap/>
+            <SwipeableTextMobileStepper/>
+            <AutoGridNoWrap/>
+            
+            
+            
+            
+            
+            
+            
+            
             
            
             
         </Container>
+         
     </React.Fragment>
     
   );
