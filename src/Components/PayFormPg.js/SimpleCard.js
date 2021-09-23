@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import { Link, Router } from "react-router-dom";
 
 //Pay Button Put Inside The Card
 const useStyles = makeStyles({
@@ -34,15 +35,22 @@ export default function SimpleCard() {
 
             </CardContent>
             <CardActions>
-                
+
                 <Button size="large">
 
-                 
+
                 </Button>
-               
+
 
                 <Button variant="outlined">Pay</Button>
-                
+                <Link to={process.env.PUBLIC_URL + '/FormPin'}>
+                    <Button variant="contained" color="primary" href="">
+                        Link
+                    </Button>
+                </Link>
+
+
+
 
             </CardActions>
         </Card>
