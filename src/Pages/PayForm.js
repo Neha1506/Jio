@@ -1,10 +1,12 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import DenseAppBar from '../Components/PaymentPg.js/DenseAppbar';
-import SimpleCard from '../Components/PayFormPg.js/SimpleCard';
 import Typography from '../Components/PayFormPg.js/TypographyA'
 import ComplexGrid from '../Components/PayFormPg.js/ComplexGrid';
-import J from './../Assets/J.png';
+import logo from './../Assets/logo.png';
+import Grid from '@material-ui/core/Grid';
+
+
 
 
 
@@ -13,19 +15,26 @@ export default function Home() {
     <React.Fragment>
         <Container fixed>
         
-            
+        <Grid container spacing={2}>
+           <Grid item xs={12}sm={12}xl={12}> 
             <DenseAppBar/>
+            </Grid>
 
-            <img src={J} />
-
-
-            <Typography/>
-            <br/>
-
-            <ComplexGrid/>
             
+           <Grid item xs={12}sm={12}xl={12}> 
+            <img src={logo} />
+            </Grid>
+            </Grid>
 
-            <SimpleCard/>
+            <Grid item xs={12}sm={12}xl={12}> 
+            <Typography/>
+            </Grid>
+            <Grid container spacing={0}>
+            <Grid item xs={12}sm={12}xl={12}> 
+            <ComplexGrid/>
+            </Grid>
+
+            </Grid>
             
             
 

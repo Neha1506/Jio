@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { Link, Router } from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
 
 //Pay Button Put Inside The Card
 const useStyles = makeStyles({
@@ -31,7 +32,11 @@ export default function SimpleCard() {
 
     return (
         <Card className={classes.root}>
+
+
             <CardContent>
+
+
 
             </CardContent>
             <CardActions>
@@ -41,13 +46,18 @@ export default function SimpleCard() {
 
                 </Button>
 
+                <Grid container spacing={5}>
+                    <Grid item xs={12} sm={12} xl={12}>
+                        <Link to={process.env.PUBLIC_URL + '/FormPin'}>
+                            <Button variant="contained" color="primary" href="">
+                                Pay
+                            </Button>
+                        </Link>
+                    </Grid>
+                </Grid>
 
-                <Button variant="outlined">Pay</Button>
-                <Link to={process.env.PUBLIC_URL + '/FormPin'}>
-                    <Button variant="contained" color="primary" href="">
-                        Link
-                    </Button>
-                </Link>
+
+
 
 
 

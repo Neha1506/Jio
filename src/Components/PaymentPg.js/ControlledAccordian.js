@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '200%',
+    width: '100%',
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -51,14 +51,14 @@ export default function ControlledAccordions() {
       </Accordion>
 
       <br />
-      Other UPI
+    
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}> YourName @Bank Name</Typography>
+          <Typography className={classes.heading}> YourName@BankName</Typography>
 
           <Typography className={classes.secondaryHeading}>
 

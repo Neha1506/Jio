@@ -1,6 +1,8 @@
 import React from 'react';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -11,28 +13,66 @@ export default function ResponsiveFontSizes() {
     <div>
       <ThemeProvider theme={theme}>
 
+      
+         
+
+          <Box component="span" m={1}>
+          <Grid container spacing={1}>
+        <Grid item xs={12}sm={12}md={12}xl={12}>
         <Typography variant="h9" color="textSecondary">JioMart Ltd</Typography>
-        <br />
+        </Grid>
+        </Grid>
+          
+        <Grid container spacing={8}>
+        <Grid item xs={12}sm={12}md={12}xl={12}>
         <Typography variant="h9" color="textSecondary">JioMart - order @paytm</Typography>
-        <br />
-        <br />
-
+        </Grid>
+      
+        
+        
+        <Grid item xs={12}sm={12}md={12}xl={12}>
         <Typography variant="h7">You are Paying</Typography>
-        <Typography variant="h3">Rs. 190</Typography>
-        <br />
-        <Typography variant="h9" color="textSecondary">Rupess One Hundred Nintey Only</Typography>
-        <br />
-        <Typography variant="h3" ></Typography>
-        <br />
-        <br />
-        <br />
-        <br />
-        <Typography variant="h9" color="textSecondary"> Message from JioMart</Typography>
-        <Typography variant="h3"></Typography>
-        <br />
+        </Grid>
+        
 
+        <Grid container spacing={2}>
+        <Grid item xs={12}sm={12}md={12}xl={12}>
+        <Typography variant="h3">Rs. 190</Typography>
+        </Grid>
+
+        <Grid item xs={12}sm={12}md={12}xl={12}>
+        <Typography variant="h9" color="textSecondary">Rupess One Hundred Nintey Only</Typography>
+        </Grid>
+        </Grid>
+
+        <Grid item xs={12}sm={12}md={12}xl={12}>
+        <Typography variant="h3" ></Typography>
+        </Grid>
+        <Grid container spacing={2}>
+        <Grid item xs={12}sm={12}md={12}xl={12}>
+        <Typography variant="h9" color="textSecondary"> Message from JioMart</Typography>
+        </Grid>
+        </Grid>
+
+        <Grid item xs={12}sm={12}md={12}xl={12}>
+        <Typography variant="h3"></Typography>
+        </Grid>
+
+        </Grid>
+         
+         
+         <Grid container spacing={5}>
+        <Grid item xs={12}sm={12}md={12}xl={12}>
         <Typography variant="h5" color="textprimary"> 'JioMart Payment'</Typography>
+        </Grid>
+
+        </Grid> 
+        </Box>
       </ThemeProvider>
+
+
+      
+
     </div>
   );
 }

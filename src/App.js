@@ -6,7 +6,6 @@ import Gallery from './Pages/Gallery.js'
 import PrimarySearchAppBar from './Components/HomePg.js/AppSearchBar';
 import Payment from './Pages/Payment.js'
 import FormPin from './Pages/FormPin.js'
-
 import PaymentSuccesful from './Pages/PaymentSuccessful';
 import PayForm from './Pages/PayForm';
 
@@ -15,7 +14,7 @@ function App() {
   return (
     <div className="App">
       {/* Header (Navigation Bar) */}
-      <header className="App-header">
+            <header className="App-header">
         
       </header>
       
@@ -31,9 +30,9 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/PayForm'}  > <PayForm/> </Route>
           </Switch>
       {/* Payment is the 1st page. */}
-      <footer className="App-footer">
+      {/*<footer className="App-footer">
         This is a footer
-      </footer>
+      </footer>*/}
     </div>
   );
   }

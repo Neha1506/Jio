@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 // Order details return on card
 const useStyles = makeStyles({
@@ -31,24 +32,30 @@ export default function SimpleCard() {
     return (
         <Card className={classes.root}>
             <CardContent>
+                
+                    
 
             </CardContent>
             <CardActions>
-                
-                
 
-                
-                <Typography variant="h3"> Sending Rs. 190  </Typography>
-                
+            <Grid container spacing={5} align="left">
+                    <Grid item xs={12} sm={12} md={12} xl={12}>
+                <Typography variant="h6"> Sending Rs. 190  </Typography>
+                </Grid>
+                </Grid>
+
+                <Grid container spacing={1} align="right">
+                    <Grid item xs={12} sm={12} md={12} xl={12}>
                 <Typography variant="h9" color="textSecondary">To JioMart Ltd</Typography>
-                
-                
+                </Grid>
+                </Grid>
+
 
             </CardActions>
         </Card>
-        
-        
-        
+
+
+
 
 
 
@@ -62,4 +69,3 @@ export default function SimpleCard() {
 
     );
 }
- 
