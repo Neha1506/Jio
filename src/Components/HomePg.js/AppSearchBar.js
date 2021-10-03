@@ -11,8 +11,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import Grid from '@material-ui/core/Grid';
 import SwipeableTemporaryDrawer from './LeftDrawer';
-// import Logo from '../../Assets/Logo.png'
 
+// Search Bar
 
 const useStyles = makeStyles((theme) => ({
 

@@ -9,6 +9,8 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import HDFC from '../../Assets/HDFC.png'
 
+// Align
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',

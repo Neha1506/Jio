@@ -4,6 +4,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import NestedGrid from './Footer2';
 
+// Footer
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 
+
+// Carousels 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

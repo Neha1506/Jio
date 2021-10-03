@@ -13,7 +13,7 @@ import MobileFriendlyIcon from '@material-ui/icons/MobileFriendly';
 import MoneyIcon from '@material-ui/icons/Money';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
-
+//Payment Stepper 
 
 const QontoConnector = withStyles({
   alternativeLabel: {

@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Jiomoney  from '../../Assets/Jiomoney.png'
 import { Grid } from '@material-ui/core';
  
+// Payment Card
+
 const useStyles = makeStyles({
   root: {
     height: 50,
