@@ -7,29 +7,29 @@ import NestedGrid from './Footer2';
 // Footer
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
 }));
 
 export default function CenteredGrid() {
-  const classes = useStyles();
+    const classes = useStyles();
 
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-              <NestedGrid/>
-          </Paper>
-        </Grid>
-       
-      </Grid>
-    </div>
-  );
+    return (
+        <div className={classes.root}>
+            <Grid container spacing={3}>
+                <Grid item xs={12}>
+                    <Paper className={classes.paper}>
+                        <NestedGrid />
+                    </Paper>
+                </Grid>
+
+            </Grid>
+        </div>
+    );
 }

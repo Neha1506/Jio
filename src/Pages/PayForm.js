@@ -13,40 +13,40 @@ import Grid from '@material-ui/core/Grid';
 export default function Home() {
   return (
     <React.Fragment>
-        <Container fixed>
-        
+      <Container fixed>
+
         <Grid container spacing={2}>
-           <Grid item xs={12}sm={12}xl={12}> 
-            <DenseAppBar/>
-            </Grid>
+          <Grid item xs={12} sm={12} xl={12}>
+            <DenseAppBar />
+          </Grid>
 
-            
-           <Grid item xs={12}sm={12}xl={12}> 
+
+          <Grid item xs={12} sm={12} xl={12}>
             <img src={logo} />
-            </Grid>
-            </Grid>
+          </Grid>
+        </Grid>
 
-            <Grid item xs={12}sm={12}xl={12}> 
-            <Typography/>
-            </Grid>
-            <Grid container spacing={0}>
-            <Grid item xs={12}sm={12}xl={12}> 
-            <ComplexGrid/>
-            </Grid>
+        <Grid item xs={12} sm={12} xl={12}>
+          <Typography />
+        </Grid>
+        <Grid container spacing={0}>
+          <Grid item xs={12} sm={12} xl={12}>
+            <ComplexGrid />
+          </Grid>
 
-            </Grid>
-            
-            
+        </Grid>
 
-            
-            
-            
-            
-            
-           
-            
-        </Container>
+
+
+
+
+
+
+
+
+
+      </Container>
     </React.Fragment>
-    
+
   );
 }

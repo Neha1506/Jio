@@ -15,53 +15,53 @@ export default function Payment() {
   return (
     <React.Fragment>
       <Container fixed>
-      <Grid container spacing={3}>
-      <Grid item xs={12}sm={12}xl={12}> 
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={12} xl={12}>
 
-      <DenseAppBar />
-      </Grid> 
-      <Grid item xs={12}sm={12}xl={12}> 
-      <HorizontalNonLinearStepperWithError/>
-      </Grid>
+            <DenseAppBar />
+          </Grid>
+          <Grid item xs={12} sm={12} xl={12}>
+            <HorizontalNonLinearStepperWithError />
+          </Grid>
 
-      Wallet  
-      <Grid item xs={12}sm={12}xl={12} align =" center">
-      <Link to={process.env.PUBLIC_URL + '/PayForm'}>
-      <S1Ep1Card/>
-      </Link>
-      </Grid>
+          Wallet
+          <Grid item xs={12} sm={12} xl={12} align=" center">
+            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+              <S1Ep1Card />
+            </Link>
+          </Grid>
 
-      <Grid item xs={12}sm={12}xl={12}  align =" center">
-      <Link to={process.env.PUBLIC_URL + '/PayForm'}>
-       <Card2/>
-        </Link>
-         </Grid>
+          <Grid item xs={12} sm={12} xl={12} align=" center">
+            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+              <Card2 />
+            </Link>
+          </Grid>
 
-         <Grid item xs={12}sm={12}xl={12} align =" center">
-      <Link to={process.env.PUBLIC_URL + '/PayForm'}>
-       <Card3/>
-        </Link>
-         </Grid>
-         
-         <Grid item xs={12}sm={12}xl={12} align =" center">
-      <Link to={process.env.PUBLIC_URL + '/PayForm'}>
-       <Card4/>
-        </Link>
-         </Grid>
-         
-         <Grid item xs={12}sm={12}xl={12} align =" center">
-      <Link to={process.env.PUBLIC_URL + '/PayForm'}>
-       <Card5/>
-        </Link>
-         </Grid>
-         
+          <Grid item xs={12} sm={12} xl={12} align=" center">
+            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+              <Card3 />
+            </Link>
+          </Grid>
 
-       Other UPI
-         <Grid item xs={12}sm={12}xl={12}>
-        <ControlledAccordions/>
+          <Grid item xs={12} sm={12} xl={12} align=" center">
+            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+              <Card4 />
+            </Link>
+          </Grid>
+
+          <Grid item xs={12} sm={12} xl={12} align=" center">
+            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+              <Card5 />
+            </Link>
+          </Grid>
+
+
+          Other UPI
+          <Grid item xs={12} sm={12} xl={12}>
+            <ControlledAccordions />
+          </Grid>
+
         </Grid>
-    
-        </Grid> 
       </Container>
     </React.Fragment>
 

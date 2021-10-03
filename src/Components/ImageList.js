@@ -40,34 +40,34 @@ const useStyles = makeStyles((theme) => ({
 
 
 
- 
- 
- 
-  const itemData = [
-    {
+
+
+
+const itemData = [
+  {
     img: image,
-     title: 'Image',
+    title: 'Image',
     author: 'author',
-    },
-   
-  ];
-  const itemData2 = [
-    {
+  },
+
+];
+const itemData2 = [
+  {
     img2: image2,
-     title: 'Image',
+    title: 'Image',
     author: 'author',
-    },
-   
-  ];
-  const itemData3 = [
-    {
+  },
+
+];
+const itemData3 = [
+  {
     img3: image3,
-     title: 'Image',
+    title: 'Image',
     author: 'author',
-    },
-   
-  ];
- 
+  },
+
+];
+
 export default function SingleLineImageList() {
   const classes = useStyles();
 
@@ -86,7 +86,7 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
-                  <BasicButtonGroup/>
+                  <BasicButtonGroup />
                 </IconButton>
               }
             />
@@ -104,7 +104,7 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
-                  <BasicButtonGroup/>
+                  <BasicButtonGroup />
                 </IconButton>
               }
             />
@@ -122,13 +122,13 @@ export default function SingleLineImageList() {
               actionIcon={
                 <IconButton aria-label={`star ${item.title}`}>
                   <StarBorderIcon className={classes.title} />
-                  <BasicButtonGroup/>
+                  <BasicButtonGroup />
                 </IconButton>
               }
             />
           </ImageListItem>
         ))}
-        
+
       </ImageList>
     </div>
   );

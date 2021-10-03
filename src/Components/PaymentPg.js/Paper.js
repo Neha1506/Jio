@@ -31,11 +31,11 @@ export default function SimplePaper() {
     <div className={classes.root}>
       Wallet
 
-      
-      
-      
-     <Button variant="outlined"  >Paytm</Button>
-      
+
+
+
+      <Button variant="outlined"  >Paytm</Button>
+
       <Button variant="outlined" >Phone pe</Button>
 
 

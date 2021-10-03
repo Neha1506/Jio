@@ -20,53 +20,53 @@ import CenteredGrid from '../Components/HomePg.js/FooterGrid';
 export default function Home() {
   return (
     <React.Fragment>
-        <Container fixed>
+      <Container fixed>
 
-          <PrimarySearchAppBar/>
-          <Grid container spacing={2}>
-           <Grid item xs={12}sm={12}xl={12}> 
-            <ContainedButtons/>
-            </Grid>
-            </Grid>
+        <PrimarySearchAppBar />
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} xl={12}>
+            <ContainedButtons />
+          </Grid>
+        </Grid>
 
-           
-            <Grid container spacing={2}align= 'center'>
-           <Grid item xs={12}sm={12}xl={12}>
-            <Carousel2/>
-            </Grid>
-            </Grid>
-            
-            <Grid container spacing={2}align= 'center'>
-           <Grid item xs={12}sm={12}xl={12}>
-            <Carousel3/>
-            </Grid>
-            </Grid>
 
-            <AutoGridNoWrap/>
-            <SingleLineImageList/>
-            <AutoGridNoWrapB/>
+        <Grid container spacing={2} align='center'>
+          <Grid item xs={12} sm={12} xl={12}>
+            <Carousel2 />
+          </Grid>
+        </Grid>
 
-            <Grid container spacing={2}align= 'center'>
-           <Grid item xs={12}sm={12}xl={12}>
-            <Carousel4/>
-            </Grid>
-            </Grid>
-            <AutoGridNoWrapC/>
-            
-            <CenteredGrid/>
-            
-            
-            
-            
-            
-            
-            
-            
-           
-            
-        </Container>
-         
+        <Grid container spacing={2} align='center'>
+          <Grid item xs={12} sm={12} xl={12}>
+            <Carousel3 />
+          </Grid>
+        </Grid>
+
+        <AutoGridNoWrap />
+        <SingleLineImageList />
+        <AutoGridNoWrapB />
+
+        <Grid container spacing={2} align='center'>
+          <Grid item xs={12} sm={12} xl={12}>
+            <Carousel4 />
+          </Grid>
+        </Grid>
+        <AutoGridNoWrapC />
+
+        <CenteredGrid />
+
+
+
+
+
+
+
+
+
+
+      </Container>
+
     </React.Fragment>
-    
+
   );
 }

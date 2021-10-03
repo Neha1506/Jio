@@ -11,40 +11,40 @@ export default function Payment() {
   return (
     <React.Fragment>
       <Container fixed>
-       
+
 
 
         <DenseAppBar />
         <Box component="span" m={1}>
 
-        <Grid container spacing={3}>
-      <Grid item xs={12}sm={12}xl={12}>
-        <img src={Wallet} />
-        </Grid> 
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12} xl={12}>
+              <img src={Wallet} />
+            </Grid>
 
-        <Grid item xs={12}sm={12}xl={12}>
-        <Typography variant="h4"color="textPrimary" >PaymentSuccessful</Typography> 
-        </Grid> 
-
-        
-        
-        <Grid item xs={12}sm={12}xl={12}>
-        <Typography variant="h8" color="textSecondary">Your amount has been paid</Typography> 
-        </Grid> 
-
-        
-        
-        <Grid item xs={12}sm={12}xl={12}>
-        <Typography variant="h6"color="" >Order Number : XXXXX</Typography> 
-        </Grid> 
+            <Grid item xs={12} sm={12} xl={12}>
+              <Typography variant="h4" color="textPrimary" >PaymentSuccessful</Typography>
+            </Grid>
 
 
-        </Grid> 
+
+            <Grid item xs={12} sm={12} xl={12}>
+              <Typography variant="h8" color="textSecondary">Your amount has been paid</Typography>
+            </Grid>
+
+
+
+            <Grid item xs={12} sm={12} xl={12}>
+              <Typography variant="h6" color="" >Order Number : XXXXX</Typography>
+            </Grid>
+
+
+          </Grid>
         </Box>
 
-        
-        
- 
+
+
+
 
 
 
