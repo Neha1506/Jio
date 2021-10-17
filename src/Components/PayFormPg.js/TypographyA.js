@@ -19,13 +19,13 @@ export default function ResponsiveFontSizes() {
           <Box component="span" m={1}>
           <Grid container spacing={1}>
         <Grid item xs={12}sm={12}md={12}xl={12}>
-        <Typography variant="h9" color="textSecondary">JioMart Ltd</Typography>
+        <Typography variant="h6" style={{color:'#03144D'}}>JioMart Ltd</Typography>
         </Grid>
         </Grid>
           
         <Grid container spacing={8}>
         <Grid item xs={12}sm={12}md={12}xl={12}>
-        <Typography variant="h9" color="textSecondary">JioMart - order @paytm</Typography>
+        <Typography variant="h9"style={{color:'#02175A'}}>JioMart - order @paytm</Typography>
         </Grid>
       
         
@@ -41,7 +41,7 @@ export default function ResponsiveFontSizes() {
         </Grid>
 
         <Grid item xs={12}sm={12}md={12}xl={12}>
-        <Typography variant="h9" color="textSecondary">Rupess One Hundred Nintey Only</Typography>
+        <Typography variant="h9"style={{color:'#726C8F'}}>Rupess One Hundred Nintey Only</Typography>
         </Grid>
         </Grid>
 

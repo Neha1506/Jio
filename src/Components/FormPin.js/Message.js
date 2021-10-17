@@ -5,6 +5,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Link, Router } from "react-router-dom";
+import Typography from '@material-ui/core/Typography';
 
 //Alert Message to show money is being transfered
 function Alert(props) {
@@ -49,18 +50,20 @@ export default function CustomizedSnackbars() {
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
           This is a success message!
-        </Alert>
+        </Alert >
       </Snackbar>
 
-      <Alert severity="warning">You are transfering money from your account to JioMart Ltd.</Alert>
+      <Alert style={{ background: '#F6AF20' }} severity="warning">You are transfering money from your account to JioMart Ltd.</Alert>
 
      
-      <Grid container spacing={5}>
+      <Grid container spacing={10}>
         <Grid item xs={12} sm={12} md={12} xl={12}>
 
       <Link to={process.env.PUBLIC_URL + '/PaymentSuccessful'}>
-                    <Button variant="contained" color="primary" href="">
-                      Pay
+      
+                    <Button variant="contained"style={{ background: '#04B5EB'}} >
+                    <Typography variant="h9"style={{color:'#ffffff'}}> Pay </Typography>
+
                     </Button>
                 </Link>
                 </Grid>

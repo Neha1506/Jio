@@ -26,39 +26,41 @@ export default function Payment() {
 
           Wallet
           <Grid item xs={12} sm={12} xl={12} align=" center">
-            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+            {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
               <S1Ep1Card />
-            </Link>
+            {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
-            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+            {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
               <Card2 />
-            </Link>
+            {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
-            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+            {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
               <Card3 />
-            </Link>
+            {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
-            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+            {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
               <Card4 />
-            </Link>
+            {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
-            <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+            {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
               <Card5 />
-            </Link>
+            {/* </Link> */}
           </Grid>
 
 
           Other UPI
+          <Grid item xs={12} sm={12} xl={12} align=" center">
           <Grid item xs={12} sm={12} xl={12}>
             <ControlledAccordions />
+          </Grid>
           </Grid>
 
         </Grid>

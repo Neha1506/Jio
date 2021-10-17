@@ -41,7 +41,7 @@ export default function Card2() {
                         </Grid>
 
 
-                        <Typography gutterBottom variant="h6" component="h3" >
+                        <Typography  variant="h6" >
                             Phone pe
                         </Typography>
 

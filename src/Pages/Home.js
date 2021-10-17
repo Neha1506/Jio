@@ -12,6 +12,8 @@ import Carousel3 from '../Components/HomePg.js/Carousel3';
 import Carousel4 from '../Components/HomePg.js/Carousel4';
 import Grid from '@material-ui/core/Grid';
 import CenteredGrid from '../Components/HomePg.js/FooterGrid';
+import SearchAppBar from '../Components/HomePg.js/Search';
+import Buttons from '../Components/HomePg.js/icons';
 
 
 
@@ -22,12 +24,13 @@ export default function Home() {
     <React.Fragment>
       <Container fixed>
 
-        <PrimarySearchAppBar />
+        <SearchAppBar/>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} xl={12}>
-            <ContainedButtons />
+            <Buttons />
           </Grid>
         </Grid>
+
 
 
         <Grid container spacing={2} align='center'>

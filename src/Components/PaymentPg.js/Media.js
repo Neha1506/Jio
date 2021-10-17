@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Paytm from '../../Assets/Paytm.png'
 import { Grid } from '@material-ui/core';
+import { Link, Router } from "react-router-dom";
 
 // Payment Card
 
@@ -35,21 +36,24 @@ export default function S1Ep1Card() {
                 <CardContent>
 
                     <Grid container spacing={0}>
+                    
 
                         <Grid item xs={6}>
                             <img src={Paytm} className="Paytm" alt="Paytm" height="20" width="20" />
 
                         </Grid>
+                        
 
-
-                        <Typography gutterBottom variant="h6" component="h3" >
+                        <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+                        <Typography variant="h6" style={{color:'#000000'}} >
                             Paytm
                         </Typography>
 
 
-                        <Grid item xs={4}>
+                        <Grid item xs={2}>
 
                         </Grid>
+                        </Link> 
 
 
 

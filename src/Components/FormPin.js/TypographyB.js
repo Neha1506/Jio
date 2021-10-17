@@ -13,21 +13,21 @@ theme = responsiveFontSizes(theme);
 export default function ResponsiveFontSizes() {
   return (
     <div>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={12} xl={12}>
-        </Grid>
-      </Grid>
+     
       <ThemeProvider theme={theme}>
 
      
         <Box component="span" m={1}>
         
-        <Grid container spacing={1} >
+        
       <Grid item xs={12} sm={12} md={12} xl={12}align ='left'>
-        <Typography variant="h9" >HDFC Bank XX2356</Typography>  <img src = {Upi} className= "image" alt= "Upi" align='right' />
+        <Typography variant="h7" >HDFC Bank </Typography>  <img src = {Upi} className= "image" alt= "Upi" align='right' />
         </Grid>
-        </Grid>
+       
 
+      <Grid item xs={12} sm={12} md={12} xl={12}align ='left'>
+        <Typography variant="h7" > XX2356</Typography>
+        </Grid>
         
 
 

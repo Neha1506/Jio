@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
         minWidth: 300,
+        backgroundColor:'#E3E3E3'
     },
     bullet: {
         display: 'inline-block',
@@ -21,6 +22,7 @@ const useStyles = makeStyles({
     },
     pos: {
         marginBottom: 500,
+        
     },
 });
 
@@ -37,8 +39,9 @@ export default function SimpleCard() {
 
             </CardContent>
             <CardActions>
+           
 
-            <Grid container spacing={5} align="left">
+            <Grid container spacing={5} align="left" >
                     <Grid item xs={12} sm={12} md={12} xl={12}>
                 <Typography variant="h6"> Sending Rs. 190  </Typography>
                 </Grid>

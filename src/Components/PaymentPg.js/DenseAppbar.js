@@ -22,7 +22,7 @@ export default function DenseAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ background: 'linear-gradient(to bottom, #0192CA, #1BD2AD)', }} >
         <Toolbar variant="dense">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <ArrowBackIosIcon />

@@ -11,17 +11,33 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import Grid from '@material-ui/core/Grid';
 import SwipeableTemporaryDrawer from './LeftDrawer';
+import { Link, Router } from "react-router-dom";
+import JioMart from '../../Assets/JioMart.png'
 
-// Search Bar
+// import Logo from '../../Assets/Logo.png'
+
 
 const useStyles = makeStyles((theme) => ({
 
 
   grow: {
     flexGrow: 1,
-    
   },
   
+  AppBar: {
+    padding: '5%',
+    background: 'linear-gradient(to bottom ,#0192CA, #0CAEBE, #13BEB7,#21DFA8)',
+    
+    // borderStyle: 'solid none solid none',
+    // borderColor: '#B1B1B1',
+    boxShadow: '0 0 0 0',
+    border:'2 solid red',
+    borderRadius: '5',
+    height:'20ch'
+   
+  },
+
+
   menuButton: {
     marginRight: theme.spacing(0),
   },
@@ -35,10 +51,9 @@ const useStyles = makeStyles((theme) => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    backgroundColor: 'white',
     '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
+      backgroundColor: 'white',
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
@@ -46,7 +61,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       marginLeft: theme.spacing(20),
       width: 'auto',
-      
     },
   },
   searchIcon: {
@@ -57,11 +71,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'grey',
+
   },
   inputRoot: {
-    color: 'inherit',
-    
-    
+    color: 'grey',
   },
   inputInput: {
     padding: theme.spacing(1, 2, 1, 1),
@@ -93,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function PrimarySearchAppBar() {
+export default function SearchAppBar() {
   const classes = useStyles();
 
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -121,17 +135,21 @@ export default function PrimarySearchAppBar() {
     const menuId = 'primary-search-account-menu';
 
 
-    
+    const mobileMenuId = 'primary-search-account-menu-mobile';
 
 
 
     return (
 
       <div className={classes.grow}>
-        <AppBar position="static" minHeight="400" style={{ background: 'linear-gradient(to bottom, #0192CA, #0CAEBE, #13BEB7,#21DFA8,#1BD2AD)', }} > 
-          
+        <AppBar position="static" className={classes.AppBar}
+>
+
           <Toolbar
           >
+            <Grid container spacing={2}>
+            <Grid item xl={1} xs={2}>
+
             <IconButton
               edge="start"
               className={classes.menuButton}
@@ -140,32 +158,22 @@ export default function PrimarySearchAppBar() {
             >
               <SwipeableTemporaryDrawer/>
             </IconButton>
+            </Grid>
 
+            <Grid item xl={6} xs={6}>
 
             <div>
-              <Typography className={classes.title} variant="h6" noWrap>
-                JioMart
-              </Typography>
+            <img src = {JioMart} className= "image" alt= "JioMart" />
+            
+             
+            
+             
               {/* <img src = {jio-mart-logo} className= "image" alt= "Logo"/> */}
             </div>
+            </Grid>
 
-
-            <div className={classes.search}>
-              <div className={classes.searchIcon}
-              >
-                <SearchIcon />
-
-              </div>
-              <InputBase
-                placeholder="Search essentials..."
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                  position: 'bottm',
-                }}
-                inputProps={{ 'aria-label': 'search' }}
-              />
-            </div>
+            <Grid item xl={1} xs={1} >
+            
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
             </div>
@@ -177,18 +185,48 @@ export default function PrimarySearchAppBar() {
               >
                 <AccountCircle/>
               </IconButton>
+             
+             
             </div>
-
+            </Grid>
+            <Grid item xl={2} xs={0}>
             <div>
               <IconButton aria-label="show 4 new mails" color="inherit">
-                <Badge badgeContent={4} color="secondary">
+              
+              <Badge badgeContent={4} color="secondary">
                   <ShoppingCartOutlinedIcon />
                 </Badge>
+               
+                
+                
+      
+
               </IconButton>
             </div>
+            </Grid>
+
+            <div className={classes.search}>
+              <div className={classes.searchIcon}
+              >
+                <SearchIcon />
+
+              </div>
+              
+              <InputBase
+                placeholder="Search essentials..."
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                  position: 'bottm',
+                }}
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </div>
+            </Grid>
           </Toolbar>
         </AppBar>
       </div>
+      
     );
   }
   return (
