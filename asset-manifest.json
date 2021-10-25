@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Jio/static/css/main.f64074cf.chunk.css",
-    "main.js": "/Jio/static/js/main.6ba1eddd.chunk.js",
-    "main.js.map": "/Jio/static/js/main.6ba1eddd.chunk.js.map",
+    "main.js": "/Jio/static/js/main.001eb22f.chunk.js",
+    "main.js.map": "/Jio/static/js/main.001eb22f.chunk.js.map",
     "runtime-main.js": "/Jio/static/js/runtime-main.c8878b2a.js",
     "runtime-main.js.map": "/Jio/static/js/runtime-main.c8878b2a.js.map",
-    "static/js/2.2000c3a9.chunk.js": "/Jio/static/js/2.2000c3a9.chunk.js",
-    "static/js/2.2000c3a9.chunk.js.map": "/Jio/static/js/2.2000c3a9.chunk.js.map",
+    "static/js/2.fdb9a215.chunk.js": "/Jio/static/js/2.fdb9a215.chunk.js",
+    "static/js/2.fdb9a215.chunk.js.map": "/Jio/static/js/2.fdb9a215.chunk.js.map",
     "index.html": "/Jio/index.html",
     "static/css/main.f64074cf.chunk.css.map": "/Jio/static/css/main.f64074cf.chunk.css.map",
-    "static/js/2.2000c3a9.chunk.js.LICENSE.txt": "/Jio/static/js/2.2000c3a9.chunk.js.LICENSE.txt",
+    "static/js/2.fdb9a215.chunk.js.LICENSE.txt": "/Jio/static/js/2.fdb9a215.chunk.js.LICENSE.txt",
     "static/media/Beauty2.b72aeac3.png": "/Jio/static/media/Beauty2.b72aeac3.png",
     "static/media/Electronics.d04b75ce.png": "/Jio/static/media/Electronics.d04b75ce.png",
     "static/media/Fashion.30e19d14.png": "/Jio/static/media/Fashion.30e19d14.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c8878b2a.js",
-    "static/js/2.2000c3a9.chunk.js",
+    "static/js/2.fdb9a215.chunk.js",
     "static/css/main.f64074cf.chunk.css",
-    "static/js/main.6ba1eddd.chunk.js"
+    "static/js/main.001eb22f.chunk.js"
   ]
 }
