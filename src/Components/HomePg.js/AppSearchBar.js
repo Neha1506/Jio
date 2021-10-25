@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
 
   grow: {
     flexGrow: 1,
-    
+
   },
-  
+
   menuButton: {
     marginRight: theme.spacing(0),
   },
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    
+
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       marginLeft: theme.spacing(20),
       width: 'auto',
-      
+
     },
   },
   searchIcon: {
@@ -60,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
   },
   inputRoot: {
     color: 'inherit',
-    
-    
+
+
   },
   inputInput: {
     padding: theme.spacing(1, 2, 1, 1),
@@ -121,15 +121,15 @@ export default function PrimarySearchAppBar() {
     const menuId = 'primary-search-account-menu';
 
 
-    
+
 
 
 
     return (
 
       <div className={classes.grow}>
-        <AppBar position="static" minHeight="400" style={{ background: 'linear-gradient(to bottom, #0192CA, #0CAEBE, #13BEB7,#21DFA8,#1BD2AD)', }} > 
-          
+        <AppBar  minHeight="400" style={{ background: 'linear-gradient(to bottom, #0192CA, #0CAEBE, #13BEB7,#21DFA8,#1BD2AD)', }} >
+
           <Toolbar
           >
             <IconButton
@@ -138,7 +138,7 @@ export default function PrimarySearchAppBar() {
               color="inherit"
               aria-label="open drawer"
             >
-              <SwipeableTemporaryDrawer/>
+              <SwipeableTemporaryDrawer />
             </IconButton>
 
 
@@ -175,7 +175,7 @@ export default function PrimarySearchAppBar() {
               <IconButton
                 color="inherit"
               >
-                <AccountCircle/>
+                <AccountCircle />
               </IconButton>
             </div>
 

@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function Card2() {
+export default function Button2() {
     const classes = useStyles();
 
     return (
@@ -41,7 +41,7 @@ export default function Card2() {
                         </Grid>
 
 
-                        <Typography  variant="h6" >
+                        <Typography variant="h6" >
                             Phone pe
                         </Typography>
 

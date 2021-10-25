@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import DenseAppBar from '../Components/PaymentPg.js/DenseAppbar';
 import Typography from '../Components/PayFormPg.js/TypographyA'
-import ComplexGrid from '../Components/PayFormPg.js/ComplexGrid';
+import ComplexGrid from '../Components/PayFormPg.js/Card';
 import logo from './../Assets/logo.png';
 import Grid from '@material-ui/core/Grid';
 
@@ -15,7 +15,7 @@ export default function Home() {
     <React.Fragment>
       <Container fixed>
 
-        <Grid container spacing={2}>
+        <Grid container spacing={10}>
           <Grid item xs={12} sm={12} xl={12}>
             <DenseAppBar />
           </Grid>

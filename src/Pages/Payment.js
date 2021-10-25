@@ -5,11 +5,11 @@ import ControlledAccordions from '../Components/PaymentPg.js/ControlledAccordian
 import Grid from '@material-ui/core/Grid';
 import HorizontalNonLinearStepperWithError from '../Components/PaymentPg.js/Stepper';
 import { Link, Router } from "react-router-dom";
-import S1Ep1Card from '../Components/PaymentPg.js/Media';
-import Card2 from '../Components/PaymentPg.js/Media.2';
-import Card3 from '../Components/PaymentPg.js/Media.3';
-import Card4 from '../Components/PaymentPg.js/Media.4';
-import Card5 from '../Components/PaymentPg.js/Media.5';
+import Button from '../Components/PaymentPg.js/Button.1';
+import Button2 from '../Components/PaymentPg.js/Button.2';
+import Button3 from '../Components/PaymentPg.js/Button.3';
+import Button4 from '../Components/PaymentPg.js/Button.4';
+import Button5 from '../Components/PaymentPg.js/Button.5';
 
 export default function Payment() {
   return (
@@ -27,40 +27,41 @@ export default function Payment() {
           Wallet
           <Grid item xs={12} sm={12} xl={12} align=" center">
             {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
-              <S1Ep1Card />
+            <Button />
             {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
             {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
-              <Card2 />
+            <Button2 />
             {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
             {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
-              <Card3 />
+            <Button3 />
             {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
             {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
-              <Card4 />
+            <Button4 />
             {/* </Link> */}
           </Grid>
 
           <Grid item xs={12} sm={12} xl={12} align=" center">
             {/* <Link to={process.env.PUBLIC_URL + '/PayForm'}> */}
-              <Card5 />
+            <Button5 />
             {/* </Link> */}
           </Grid>
 
 
           Other UPI
           <Grid item xs={12} sm={12} xl={12} align=" center">
-          <Grid item xs={12} sm={12} xl={12}>
-            <ControlledAccordions />
-          </Grid>
+            <Grid item xs={12} sm={12} xl={12}>
+              <ControlledAccordions />
+
+            </Grid>
           </Grid>
 
         </Grid>

@@ -1,8 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import ContainedButtons from '../Components/HomePg.js/Button2';
-import SwipeableTextMobileStepper from '../Components/HomePg.js/Carousel';
-import PrimarySearchAppBar from '../Components/HomePg.js/AppSearchBar';
 import AutoGridNoWrap from '../Components/HomePg.js/Wrap';
 import SingleLineImageList from '../Components/ImageList';
 import AutoGridNoWrapB from '../Components/HomePg.js/WrapB';
@@ -10,6 +7,7 @@ import AutoGridNoWrapC from '../Components/HomePg.js/WrapC';
 import Carousel2 from '../Components/HomePg.js/Carousel2';
 import Carousel3 from '../Components/HomePg.js/Carousel3';
 import Carousel4 from '../Components/HomePg.js/Carousel4';
+import Carousel from '../Components/HomePg.js/Carousel';
 import Grid from '@material-ui/core/Grid';
 import CenteredGrid from '../Components/HomePg.js/FooterGrid';
 import SearchAppBar from '../Components/HomePg.js/Search';
@@ -24,7 +22,7 @@ export default function Home() {
     <React.Fragment>
       <Container fixed>
 
-        <SearchAppBar/>
+        <SearchAppBar />
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} xl={12}>
             <Buttons />
@@ -32,6 +30,12 @@ export default function Home() {
         </Grid>
 
 
+
+        <Grid container spacing={2} align='center'>
+          <Grid item xs={12} sm={12} xl={12}>
+            <Carousel />
+          </Grid>
+        </Grid>
 
         <Grid container spacing={2} align='center'>
           <Grid item xs={12} sm={12} xl={12}>
@@ -44,6 +48,7 @@ export default function Home() {
             <Carousel3 />
           </Grid>
         </Grid>
+
 
         <AutoGridNoWrap />
         <SingleLineImageList />

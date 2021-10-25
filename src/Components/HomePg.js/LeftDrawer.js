@@ -46,9 +46,9 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Profile', 'Grocery', 'Home and kitchen', 'Fashion','Jwellery'].map((text, index) => (
+        {['Profile', 'Grocery', 'Home and kitchen', 'Fashion', 'Jwellery'].map((text, index) => (
           <ListItem button key={text}>
-           
+
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -57,7 +57,7 @@ export default function SwipeableTemporaryDrawer() {
       <List>
         {['Beauty', 'Electronics', 'Medicine'].map((text, index) => (
           <ListItem button key={text}>
-            
+
             <ListItemText primary={text} />
           </ListItem>
         ))}

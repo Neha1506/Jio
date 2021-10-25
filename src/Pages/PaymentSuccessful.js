@@ -16,14 +16,21 @@ export default function Payment() {
         
 
 
+      <Grid container spacing={8}>
+          <Grid item xs={12} sm={12} xl={12}>
+            <DenseAppBar />
+          </Grid>
+         
+        
+        
 
-        <DenseAppBar />
-        <Box component="span" m={1}>
+        <Grid item xs={12} sm={12} xl={12}>
+        <img src={Wallet} />
+          </Grid>
+          </Grid>
+          <Box component="span" m={1}>
 
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={12} xl={12}>
-              <img src={Wallet} />
-            </Grid>
+            <Grid container spacing={3}>
             <Grid item xs={12} sm={12} xl={12}>
               <Typography variant="h4" style={{color:'#707070'}}  >PaymentSuccessful</Typography>
              

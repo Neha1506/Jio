@@ -94,7 +94,7 @@ const ColorlibConnector = withStyles({
   active: {
     '& $line': {
       backgroundImage:
-        'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+        '',
     },
   },
   completed: {
@@ -115,7 +115,7 @@ const useColorlibStepIconStyles = makeStyles({
   root: {
     backgroundColor: '#ccc',
     zIndex: 1,
-    color: '#fff',
+    color: '#000000',
     width: 50,
     height: 50,
     display: 'flex',
@@ -125,12 +125,12 @@ const useColorlibStepIconStyles = makeStyles({
   },
   active: {
     backgroundImage:
-      'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)',
+      'linear-gradient( 136deg, rgb(254,214,1) 100%, rgb(254,214,1) 50%, rgb(254,214,1) 100%)',
     boxShadow: '0 4px 10px 0 rgba(0,0,0,.25)',
   },
   completed: {
     backgroundImage:
-      'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)',
+      'linear-gradient( 136deg, rgb(254,214,1) 100%, rgb(254,214,1) 50%, rgb(254,214,1) 100%)',
   },
 });
 
@@ -141,7 +141,7 @@ function ColorlibStepIcon(props) {
   const icons = {
     1: <ShoppingCartOutlinedIcon />,
     2: <MobileFriendlyIcon />,
-    3: <MoneyIcon/>,
+    3: <MoneyIcon />,
   };
 
   return (
@@ -221,8 +221,8 @@ export default function CustomizedSteppers() {
   return (
     <div className={classes.root}>
       <Stepper alternativeLabel activeStep={activeStep}>
-        
-     
+
+
       </Stepper>
       <Stepper alternativeLabel activeStep={activeStep} connector={<ColorlibConnector />}>
         {steps.map((label) => (
@@ -235,7 +235,7 @@ export default function CustomizedSteppers() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-              
+
             </Typography>
             <Button onClick={handleReset} className={classes.button}>
               Reset
@@ -245,17 +245,8 @@ export default function CustomizedSteppers() {
           <div>
             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
             <div>
-              <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
-                Back
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleNext}
-                className={classes.button}
-              >
-                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-              </Button>
+
+
             </div>
           </div>
         )}

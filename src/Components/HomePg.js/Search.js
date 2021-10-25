@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
   },
-  
+
   AppBar: {
     padding: '5%',
     background: 'linear-gradient(to bottom ,#0192CA, #0CAEBE, #13BEB7,#21DFA8)',
-    
+
     // borderStyle: 'solid none solid none',
     // borderColor: '#B1B1B1',
     boxShadow: '0 0 0 0',
-    border:'2 solid red',
+    border: '2 solid red',
     borderRadius: '5',
-    height:'20ch'
-   
+    height: '20ch'
+
   },
 
 
@@ -143,90 +143,90 @@ export default function SearchAppBar() {
 
       <div className={classes.grow}>
         <AppBar position="static" className={classes.AppBar}
->
+        >
 
           <Toolbar
           >
             <Grid container spacing={2}>
-            <Grid item xl={1} xs={2}>
+              <Grid item xl={1} xs={2}>
 
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="open drawer"
-            >
-              <SwipeableTemporaryDrawer/>
-            </IconButton>
-            </Grid>
+                <IconButton
+                  edge="start"
+                  className={classes.menuButton}
+                  color="inherit"
+                  aria-label="open drawer"
+                >
+                  <SwipeableTemporaryDrawer />
+                </IconButton>
+              </Grid>
 
-            <Grid item xl={6} xs={6}>
+              <Grid item xl={6} xs={6}>
 
-            <div>
-            <img src = {JioMart} className= "image" alt= "JioMart" />
-            
-             
-            
-             
-              {/* <img src = {jio-mart-logo} className= "image" alt= "Logo"/> */}
-            </div>
-            </Grid>
-
-            <Grid item xl={1} xs={1} >
-            
-            <div className={classes.grow} />
-            <div className={classes.sectionDesktop}>
-            </div>
+                <div>
+                  <img src={JioMart} className="image" alt="JioMart" />
 
 
-            <div>
-              <IconButton
-                color="inherit"
-              >
-                <AccountCircle/>
-              </IconButton>
-             
-             
-            </div>
-            </Grid>
-            <Grid item xl={2} xs={0}>
-            <div>
-              <IconButton aria-label="show 4 new mails" color="inherit">
-              
-              <Badge badgeContent={4} color="secondary">
-                  <ShoppingCartOutlinedIcon />
-                </Badge>
-               
-                
-                
-      
 
-              </IconButton>
-            </div>
-            </Grid>
 
-            <div className={classes.search}>
-              <div className={classes.searchIcon}
-              >
-                <SearchIcon />
+                  {/* <img src = {jio-mart-logo} className= "image" alt= "Logo"/> */}
+                </div>
+              </Grid>
 
+              <Grid item xl={1} xs={1} >
+
+                <div className={classes.grow} />
+                <div className={classes.sectionDesktop}>
+                </div>
+
+
+                <div>
+                  <IconButton
+                    color="inherit"
+                  >
+                    <AccountCircle />
+                  </IconButton>
+
+
+                </div>
+              </Grid>
+              <Grid item xl={2} xs={0}>
+                <div>
+                  <IconButton aria-label="show 4 new mails" color="inherit">
+
+                    <Badge badgeContent={4} color="secondary">
+                      <ShoppingCartOutlinedIcon />
+                    </Badge>
+
+
+
+
+
+                  </IconButton>
+                </div>
+              </Grid>
+
+              <div className={classes.search}>
+                <div className={classes.searchIcon}
+                >
+                  <SearchIcon />
+
+                </div>
+
+                <InputBase
+                  placeholder="Search essentials..."
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput,
+                    position: 'bottm',
+                  }}
+                  inputProps={{ 'aria-label': 'search' }}
+                />
               </div>
-              
-              <InputBase
-                placeholder="Search essentials..."
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                  position: 'bottm',
-                }}
-                inputProps={{ 'aria-label': 'search' }}
-              />
-            </div>
             </Grid>
           </Toolbar>
         </AppBar>
       </div>
-      
+
     );
   }
   return (

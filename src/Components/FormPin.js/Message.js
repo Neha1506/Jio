@@ -40,7 +40,7 @@ export default function CustomizedSnackbars() {
   return (
     <div className={classes.root}>
 
-      
+
 
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={12} xl={12}>
@@ -55,19 +55,19 @@ export default function CustomizedSnackbars() {
 
       <Alert style={{ background: '#F6AF20' }} severity="warning">You are transfering money from your account to JioMart Ltd.</Alert>
 
-     
+
       <Grid container spacing={10}>
         <Grid item xs={12} sm={12} md={12} xl={12}>
 
-      <Link to={process.env.PUBLIC_URL + '/PaymentSuccessful'}>
-      
-                    <Button variant="contained"style={{ background: '#04B5EB'}} >
-                    <Typography variant="h9"style={{color:'#ffffff'}}> Pay </Typography>
+          <Link to={process.env.PUBLIC_URL + '/PaymentSuccessful'}>
 
-                    </Button>
-                </Link>
-                </Grid>
-                </Grid>
+            <Button variant="contained" style={{ background: '#04B5EB' }} >
+              <Typography variant="h9" style={{ color: '#ffffff' }}> Pay </Typography>
+
+            </Button>
+          </Link>
+        </Grid>
+      </Grid>
 
     </div>
   );

@@ -5,7 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Freecharge from '../../Assets/Freecharge.png'
+import Jiomoney from '../../Assets/Jiomoney.png'
 import { Grid } from '@material-ui/core';
 
 // Payment Card
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function Card5() {
+export default function Button3() {
     const classes = useStyles();
 
     return (
@@ -36,13 +36,13 @@ export default function Card5() {
                     <Grid container spacing={0}>
 
                         <Grid item xs={6}>
-                            <img src={Freecharge} className="Freecharge" alt="Freecharge" height="20" width="20" />
+                            <img src={Jiomoney} className="Jiomoney" alt="Jiomoney" height="20" width="20" />
 
                         </Grid>
 
 
                         <Typography gutterBottom variant="h6" component="h3" >
-                            FreeCharge
+                            JioMoney
                         </Typography>
 
 

@@ -13,7 +13,12 @@ export default function Home() {
   return (
     <React.Fragment>
       <Container fixed>
-        <DenseAppBar />
+
+        <Grid container spacing={10}>
+          <Grid item xs={12} sm={12} xl={12}>
+            <DenseAppBar />
+          </Grid>
+        </Grid>
 
         <Grid container spacing={10}>
           <Grid item xs={12} sm={12} xl={12}>
@@ -26,6 +31,9 @@ export default function Home() {
             <SimpleCard />
           </Grid>
         </Grid>
+
+
+
 
         <Grid container spacing={10}>
           <Grid item xs={12} sm={12} xl={12}>

@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 800,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
+    backgroundColor: '#E4E4E4'
   },
 }));
 
@@ -31,7 +32,7 @@ export default function AutoGridNoWrapC() {
     <Paper className={classes.paper}>
 
       <Grid container wrap="nowrap" spacing={2}>
-       Collection With Best Offers
+        Collection With Best Offers
         <Grid item>
 
         </Grid>

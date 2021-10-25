@@ -18,7 +18,7 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      
+
       <Button variant="contained" color="secondary">
         Grocery
       </Button>
@@ -37,9 +37,9 @@ export default function ContainedButtons() {
       <Button variant="contained" color="secondary">
         Beauty
       </Button>
-      
+
       <Button variant="contained" color="primary" href="#contained-buttons">
-        Electronics 
+        Electronics
       </Button>
 
       <Button variant="contained" color="primary" href="#contained-buttons">

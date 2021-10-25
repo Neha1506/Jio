@@ -13,15 +13,15 @@ export default function Responsive() {
     <div>
       <ThemeProvider theme={theme}>
 
-      <Grid container spacing={8}>
-           <Grid item xs={12}sm={12}xl={12}>
-      <Typography variant="h9" color="textSecondary">'Enter ALL 4 UPI PIN'</Typography>
-      </Grid>
-      </Grid>
-      
-        
+        <Grid container spacing={8}>
+          <Grid item xs={12} sm={12} xl={12}>
+            <Typography variant="h9" color="textSecondary">'Enter ALL 4 UPI PIN'</Typography>
+          </Grid>
+        </Grid>
 
-        
+
+
+
       </ThemeProvider>
     </div>
   );

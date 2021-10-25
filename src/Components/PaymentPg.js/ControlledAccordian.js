@@ -42,16 +42,19 @@ export default function ControlledAccordions() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
-        > 
-        
-   
-           <Grid item xs={12} sm={12} xl={12}> 
-          <img src={GooglePay} className="GooglePay" alt="GooglePay" height="20" width="20" position='center' />
-           </Grid> 
-           
-          <Typography variant="h6" className={classes.heading} align='left'>Google Pay </Typography>
-        
-          
+        >
+
+
+          <Grid item xs={12} sm={12} xl={12}>
+            <img src={GooglePay} className="GooglePay" alt="GooglePay" height="20" width="20" position='center' />
+          </Grid>
+
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12} xl={12}>
+              <Typography variant="h6" component="h3" align='left'>GooglePay</Typography>
+            </Grid>
+          </Grid>
+
 
         </AccordionSummary>
         <AccordionDetails>
@@ -62,7 +65,7 @@ export default function ControlledAccordions() {
       </Accordion>
 
       <br />
-    
+
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -70,14 +73,16 @@ export default function ControlledAccordions() {
           id="panel2bh-header"
         >
 
-     
+
           <Grid item xs={12} sm={12} xl={12}>
-          <img src={Circle} className="Circle" alt="Circle" height="20" width="20" />
+            <img src={Circle} className="Circle" alt="Circle" height="20" width="20" />
           </Grid>
-          
-         
-          <Typography variant="h6" className={classes.heading} align='left'> YourName@BankName</Typography>
-          
+
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={12} xl={12}>
+              <Typography variant="h6" component="h3" align='left'>YourName@BankName</Typography>
+            </Grid>
+          </Grid>
 
           <Typography className={classes.secondaryHeading}>
 

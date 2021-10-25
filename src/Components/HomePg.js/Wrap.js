@@ -11,11 +11,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     overflow: 'hidden',
     padding: theme.spacing(0, 3),
+   
   },
   paper: {
     maxWidth: 400,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
+    backgroundColor: '#E4E4E4'
   },
 }));
 

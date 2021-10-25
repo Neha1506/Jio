@@ -5,10 +5,12 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Mobikwik from '../../Assets/Mobikwik.png'
+import Paytm from '../../Assets/Paytm.png'
 import { Grid } from '@material-ui/core';
+import { Link, Router } from "react-router-dom";
 
 // Payment Card
+
 
 const useStyles = makeStyles({
     root: {
@@ -20,7 +22,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function Card4() {
+export default function Button() {
     const classes = useStyles();
 
     return (
@@ -35,20 +37,23 @@ export default function Card4() {
 
                     <Grid container spacing={0}>
 
+
                         <Grid item xs={6}>
-                            <img src={Mobikwik} className="Mobikwik" alt="Mobikwik" height="20" width="20" />
+                            <img src={Paytm} className="Paytm" alt="Paytm" height="20" width="20" />
 
                         </Grid>
 
 
-                        <Typography gutterBottom variant="h6" component="h3" >
-                            Mobikwik
-                        </Typography>
+                        <Link to={process.env.PUBLIC_URL + '/PayForm'}>
+                            <Typography variant="h6" style={{ color: '#000000' }} >
+                                Paytm
+                            </Typography>
 
 
-                        <Grid item xs={4}>
+                            <Grid item xs={2}>
 
-                        </Grid>
+                            </Grid>
+                        </Link>
 
 
 
